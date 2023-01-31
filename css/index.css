@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body{
+  background-color:#646C79;
+  font-family: 'Roboto Mono', monospace;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo{
+  width: 15%;
+  filter: invert(100%);
+}
+
+.heading{
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.text{
+  text-align: center;
+  color: #fff;
+  margin-top: 3rem;
+}
+
+.mainText{
+  font-size: 5.6rem;
+ 
+}
+
+.subText{
+  font-size: 2.8rem;
+  padding: 1.5rem;
+ 
+}
+
+.drag_drop,.download_box{
+  display: block;
+  width: 45%;
+  height: 22rem;
+  margin: 3rem auto;
+  border: 2px dashed  #fff;
+  border-radius: .4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload_sec,.download_sec{
+  background: #979DA6;
+  margin: 1rem;
+  height:24rem ;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#fileInput{
+  display: none;
+}
+.upload_sec p{
+  font-size: 2rem;
+  padding: .9rem;
+  color: #f5f9ff;
+  text-align: center;
+}
+
+.add{
+  margin:1rem;
+}
+
+.fa-plus{
+  font-size: 2.5rem;
+  padding: .6rem;
+  background:#EBEEF2;
+  border-radius: 50%;
+}
+
+.progress{
+  height: 4.2rem;
+  width: 85%;
+  border: 2px solid #e9ebe9;
+  display: none;
+  border-radius: .8rem;
+}
+
+.progressInner{
+  height: 4.3rem;
+  width: 0%;
+  background-color: #8bb8a3;
+  border-radius: .5rem;
+  transition: width .25s linear ease;
+}
+.progressVal{
+  display: block;
+    font-size: 2.5rem;
+  padding: .9rem;
+  color: #e9ebe9;
+  text-align: center;
+  font-weight: bold;
+}
+
+.resLink{
+  width: 60%;
+  height: 5rem;
+  border: 1px dashed #fff;
+  display: block;
+  margin: auto;
+  font-size: 1.2rem;
+  padding: .8rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+}
+
+.resLink input{
+  width: 80%;
+  overflow: scroll;
+  border-right: 1px solid white;
+}
+.resLink button{
+  width: 24%;
+}
+
+.shareBtn{
+  font-size:4.5rem;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+
+
+
+
+
+@media screen and (max-width:890px){
+  html{
+    font-size: 40%;
+  }
+  
+.drag_drop{
+ width: 85%;
+}
+.upload_sec{
+  width: 95%;
+}
+
+.resLink{
+  width: 80%;
+  opacity: 0;
+}
+div.notyf__message{
+  font-size: 2rem;
+}
+}
+
+
+
+
